@@ -553,6 +553,11 @@
   resolved "https://registry.yarnpkg.com/@xterm/addon-search/-/addon-search-0.14.0-beta.1.tgz#92cd959f2200b419d09f30f561bf0d574418571c"
   integrity sha512-XPY5vn4ML7+W7lYwIeJu3CXh4Pw/oQ853s6gEng9+33VvREuzcPRr3aNBToQ0UMxmEkZmVtcKh2o1hbGl64deQ==
 
+"@xterm/xterm@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@xterm/xterm/-/xterm-5.5.0.tgz#275fb8f6e14afa6e8a0c05d4ebc94523ff775396"
+  integrity sha512-hqJHYaQb5OptNunnyAnkHyM8aCjZ1MEIDTQu1iIbbTD/xops91NB5yq1ZK/dC2JDbVWtF23zUtl9JE2NqwT87A==
+
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
@@ -620,9 +625,9 @@ convert-source-map@^2.0.0:
   integrity sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==
 
 csstype@^3.1.0:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
-  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
+  integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
 debug@^4.1.0:
   version "4.3.4"
@@ -774,18 +779,37 @@ semver@^6.3.1:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.1.tgz#556d2ef8689146e46dcea4bfdd095f3434dffcb4"
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
+seroval-plugins@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/seroval-plugins/-/seroval-plugins-1.1.1.tgz#1e0c175e13bb4c620d4ce5916fbbb63de70c31f9"
+  integrity sha512-qNSy1+nUj7hsCOon7AO4wdAIo9P0jrzAMp18XhiOzA6/uO5TKtP7ScozVJ8T293oRIvi5wyCHSM4TrJo/c/GJA==
+
 seroval@^0.12.0:
   version "0.12.4"
   resolved "https://registry.yarnpkg.com/seroval/-/seroval-0.12.4.tgz#f680d82f1ab7129e4374f28a122ec01925571e86"
   integrity sha512-JIsZHp98o+okpYN8HEPyI9Blr0gxAUPIGvg3waXrEMFjPz9obiLYMz0uFiUGezKiCK8loosYbn8WsqO8WtAJUA==
 
-solid-js@^1.7.8, solid-js@^1.8.5:
+seroval@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/seroval/-/seroval-1.1.1.tgz#7630e0c17a3efa6be43f17ad6bcf9f966a61b443"
+  integrity sha512-rqEO6FZk8mv7Hyv4UCj3FD3b6Waqft605TLfsCe/BiaylRpyyMC0b+uA5TJKawX3KzMrdi3wsLbCaLplrQmBvQ==
+
+solid-js@^1.7.8:
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.5.tgz#60c68cb67feafa84c2c3f38dd2050adeef31cde1"
   integrity sha512-xvtJvzJzWbsn35oKFhW9kNwaxG1Z/YLMsDp4tLVcYZTMPzvzQ8vEZuyDQ6nt7xDArVgZJ7TUFrJUwrui/oq53A==
   dependencies:
     csstype "^3.1.0"
     seroval "^0.12.0"
+
+solid-js@^1.8.5:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.9.3.tgz#078f026fe32f6b9b48e8e0557be150f0c2d610a9"
+  integrity sha512-5ba3taPoZGt9GY3YlsCB24kCg0Lv/rie/HTD4kG6h4daZZz7+yK02xn8Vx8dLYBc9i6Ps5JwAbEiqjmKaLB3Ag==
+  dependencies:
+    csstype "^3.1.0"
+    seroval "^1.1.0"
+    seroval-plugins "^1.1.0"
 
 solid-refresh@^0.5.3:
   version "0.5.3"
@@ -796,13 +820,13 @@ solid-refresh@^0.5.3:
     "@babel/helper-module-imports" "^7.18.6"
     "@babel/types" "^7.21.2"
 
-solid-xterm@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/solid-xterm/-/solid-xterm-0.1.2.tgz#052db4f32e439ab53671c9b88a952d9d19eebb1a"
-  integrity sha512-Nlr7UJRR/d1tuSpDXDdKI+D+X59xXItD5IsbHCDCAGVZZTwdJTJE/4rjV/g3sZx0ovGWIe7TEmJrtThfO0KN0A==
+solid-xterm@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/solid-xterm/-/solid-xterm-0.2.0.tgz#a71325bfcf97ba9a80d9d0edbdb439e6c90e7dea"
+  integrity sha512-UyhWZD/L1njkV++oAhCGHsIKYFfyrHLCHpSM0mYCrgXXWo57TCxJVcPFVDY+B1PYbpSjW1rvqGlJK+HwEQxFwg==
   dependencies:
+    "@xterm/xterm" "^5.5.0"
     solid-js "^1.8.5"
-    xterm "^5.3.0"
 
 source-map-js@^1.0.2:
   version "1.0.2"
@@ -867,11 +891,6 @@ vitefu@^0.2.4:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/vitefu/-/vitefu-0.2.5.tgz#c1b93c377fbdd3e5ddd69840ea3aa70b40d90969"
   integrity sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==
-
-xterm@^5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/xterm/-/xterm-5.3.0.tgz#867daf9cc826f3d45b5377320aabd996cb0fce46"
-  integrity sha512-8QqjlekLUFTrU6x7xck1MsPzPA571K5zNqWm0M0oroYEWVOptZ0+ubQSkQ3uxIEhcIHRujJy6emDWX4A7qyFzg==
 
 yallist@^3.0.2:
   version "3.1.1"
